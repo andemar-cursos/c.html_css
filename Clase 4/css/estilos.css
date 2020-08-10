@@ -51,17 +51,81 @@ nav li a:hover{
 .products{
     display: flex;
     background-image: url("../../adobe xd/assets/curva.png");
-    height: 400px;
+    height: 100px;
     background-size: cover;
     background-position: center top;
     padding: 15%;
+    justify-content: space-between;
 }
 
 .product{
     padding: 10px;
+    width: 400px;
+    height: 410px;
+    margin-top: -530px;
+    /*overflow: hidden;*/
 }
 
 .products .content{
   background-color: white;
-    padding: 20px;
+  padding: 15px;
+    box-shadow: 0 0 5px #2AB8DA;
+}
+
+.content h1{
+    margin: 40px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #356093;
+}
+
+.content p{
+    height:50px;
+    overflow: hidden;
+    /*No funciona el ellipsis*/
+    text-overflow: ellipsis;
+}
+
+.img_content {
+    text-align: center;
+    height: 200px;
+    /*Con esto se hace crop-recortar*/
+    /*overflow: hidden;*/
+}
+
+.img_content_ran {
+    text-align: center;
+    height: 200px;
+    /*Con esto se hace crop-recortar*/
+    /*overflow: hidden;*/
+}
+
+.img_content img{
+    height: 280px;
+    width: auto;
+    margin: -55px 0 0 0;
+}
+
+.img_content_ran img{
+    height: 230px;
+    width: auto;
+    margin: -13px 0 0 0;
+}
+
+.main_button{
+    background-color: #356093;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 0px;
+    box-shadow: 0 2px 5px #2AB8DA;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.main_button:hover{
+    background-color: #529ffb;
 }
