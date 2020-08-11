@@ -1,3 +1,22 @@
+/*Variables*/
+:root {
+    --azul-color:#2AB8DA;
+    --azulOscuro-color:#356093;
+    --azulHover-color:#529ffb;
+    --white-color:white;
+    /*Espaciado*/
+    --space:10px;
+    /*font*/
+    --small-font:15px;
+    --normal-font:20px;
+    --big-font:30px;
+    --extra-font:40px;
+    /*Box shadow*/
+    --bShadow-button:0 2px 5px var(--azul-color);
+    --bShadow-product:0 0 5px var(--azul-color);
+}
+
+
 html,body {
     padding: 0px;
     margin: 0px;
@@ -5,9 +24,9 @@ html,body {
 
 nav {
     display: flex;
-    background-color: #2AB8DA;
-    padding: 10px;
-    font-size: 15px;
+    background-color: var(--azul-color);
+    padding: var(--space);
+    font-size: var(--small-font);
     font-family: Calibri;
     justify-content: space-between;
     /*Alinea verticalmente los items*/
@@ -24,14 +43,14 @@ nav li{
 }
 
 nav li a{
-    font-size: 20px;
+    font-size: var(--normal-font);
     font-weight: bold;
-    color:#356093;
+    color: var(--azulOscuro-color);
     text-decoration: none;
 }
 
 nav li a:hover{
-    color:  white;
+    color:  var(--white-color);
 }
 
 
@@ -43,9 +62,9 @@ nav li a:hover{
 }
 
 .main_section h1{
-    font-size: 40px;
+    font-size: var(--extra-font);
     font-weight: bold;
-    color: #356093;
+    color: var(--azulOscuro-color);
 }
 
 .products{
@@ -59,24 +78,24 @@ nav li a:hover{
 }
 
 .product{
-    padding: 10px;
+    padding: var(--space);
     width: 400px;
-    height: 410px;
+    height: 4var(--space);
     margin-top: -530px;
     /*overflow: hidden;*/
 }
 
 .products .content{
-  background-color: white;
+  background-color: var(--white-color);
   padding: 15px;
-    box-shadow: 0 0 5px #2AB8DA;
+    box-shadow: var(--bShadow-product);
 }
 
 .content h1{
     margin: 40px 0 0 0;
-    font-size: 30px;
+    font-size: var(--big-font);
     font-weight: bold;
-    color: #356093;
+    color: var(--azulOscuro-color);
 }
 
 .content p{
@@ -113,19 +132,19 @@ nav li a:hover{
 }
 
 .main_button{
-    background-color: #356093;
+    background-color: var(--azulOscuro-color);
     width: 100%;
-    margin: 10px 0px;
-    padding: 10px;
-    font-size: 20px;
+    margin: var(--space) 0px;
+    padding: var(--space);
+    font-size: var(--normal-font);
     font-weight: bold;
-    color: white;
+    color: var(--white-color);
     border: 0px;
-    box-shadow: 0 2px 5px #2AB8DA;
+    box-shadow: var(--bShadow-button);
     cursor: pointer;
     border-radius: 3px;
 }
 
 .main_button:hover{
-    background-color: #529ffb;
+    background-color: var(--azulHover-color);
 }
