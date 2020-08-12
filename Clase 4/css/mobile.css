@@ -1,0 +1,37 @@
+@media (max-width: 600px) {
+
+    .main_section{
+        padding: 4%;
+    }
+
+    .products{
+        display: inherit;
+    }
+
+    .product{
+        margin-top: auto;
+        height: auto;
+    }
+
+    .bands, .mentions{
+        display: inherit;
+        text-align: -webkit-center;
+    }
+
+    .band{
+        margin: 50px 0;
+    }
+
+    .mentions{
+        margin-top: auto;
+    }
+
+    .mention{
+        height: auto;
+        margin: 50px 0 0 0;
+    }
+
+    .footer{
+        margin-top: 100px;
+    }
+}
