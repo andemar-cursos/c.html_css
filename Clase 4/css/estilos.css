@@ -1,9 +1,14 @@
 /*Variables*/
 :root {
+    /*Colores*/
     --azul-color:#2AB8DA;
     --azulOscuro-color:#356093;
     --azulHover-color:#529ffb;
     --white-color:white;
+    --gris-color:#63758B;
+    --hina-color:#2AB8DA;
+    --yuki-color:#DFB4D5;
+    --koko-color:#FFD190;
     /*Espaciado*/
     --space:10px;
     /*font*/
@@ -11,6 +16,7 @@
     --normal-font:20px;
     --big-font:30px;
     --extra-font:40px;
+    --font-calibri:Calibri, serif;
     /*Box shadow*/
     --bShadow-button:0 2px 5px var(--azul-color);
     --bShadow-product:0 0 5px var(--azul-color);
@@ -18,16 +24,17 @@
 
 
 html,body {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-calibri);
 }
+
 
 nav {
     display: flex;
     background-color: var(--azul-color);
     padding: var(--space);
     font-size: var(--small-font);
-    font-family: Calibri;
     justify-content: space-between;
     /*Alinea verticalmente los items*/
     align-items: center;
@@ -53,11 +60,15 @@ nav li a:hover{
     color:  var(--white-color);
 }
 
+/*comunes*/
+.sin_margin{
+    margin: 0;
+}
 
 /* -------- main section -----------*/
 
 .main_section{
-    padding: 5% 0% 20% 0%;
+    padding: 5% 0 20% 0;
     text-align: center;
 }
 
@@ -70,7 +81,6 @@ nav li a:hover{
 .products{
     display: flex;
     background-image: url("../../adobe xd/assets/curva.png");
-    height: 100px;
     background-size: cover;
     background-position: center top;
     padding: 15%;
@@ -80,7 +90,7 @@ nav li a:hover{
 .product{
     padding: var(--space);
     width: 400px;
-    height: 4var(--space);
+    height: var(--space);
     margin-top: -530px;
     /*overflow: hidden;*/
 }
@@ -134,12 +144,12 @@ nav li a:hover{
 .main_button{
     background-color: var(--azulOscuro-color);
     width: 100%;
-    margin: var(--space) 0px;
+    margin: var(--space) px;
     padding: var(--space);
     font-size: var(--normal-font);
     font-weight: bold;
     color: var(--white-color);
-    border: 0px;
+    border: 0;
     box-shadow: var(--bShadow-button);
     cursor: pointer;
     border-radius: 3px;
@@ -147,4 +157,125 @@ nav li a:hover{
 
 .main_button:hover{
     background-color: var(--azulHover-color);
+}
+
+/*Bandas*/
+
+.bands{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.band{
+    width: 300px;
+    margin: 0 50px;
+    overflow: hidden;
+}
+
+.img_content_band{
+    height: 70px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content_band p{
+    text-align: initial;
+}
+
+.line_aft_content_band{
+    height: 2px;
+    margin-top: 10px;
+    background-color: #E53344;
+    border-radius: 40px;
+}
+
+.line_ros_content_band{
+    height: 2px;
+    margin-top: 10px;
+    background-color: #6670ED;
+    border-radius: 40px;
+}
+
+.line_pas_content_band{
+    height: 2px;
+    margin-top: 10px;
+    background-color: #FF2799;
+    border-radius: 40px;
+}
+
+/*Mentions*/
+
+.title_mentions{
+    margin-top: 150px;
+    text-align: center;
+    color: var(--azul-color);
+    font-size: var(--extra-font);
+    font-style: italic;
+}
+
+
+.mentions{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mention{
+    height: 600px;
+    width: 400px;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.img_content_mention{
+    height: 250px;
+    width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    background-color: lightskyblue;
+}
+
+.img_content_mention img{
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.text_content_mention{
+    color: var(--gris-color);
+    font-size: var(--normal-font);
+    font-weight: bold;
+    margin: 4px 0 10px 0;
+}
+
+.text_hina_content_mention{
+    box-shadow: 0 0 6px 0 var(--hina-color);
+    padding: 2px 5px;
+    border-radius: 0 0 5px 5px;
+    font-style: italic;
+}
+.text_hina_content_mention h3{
+    color: var(--hina-color);
+}
+
+.text_yuki_content_mention{
+    box-shadow: 0 0 6px 0 var(--yuki-color);
+    padding: 2px 5px;
+    border-radius: 0 0 5px 5px;
+    font-style: italic;
+}
+.text_yuki_content_mention h3{
+    color: var(--yuki-color);
+}
+
+.text_koko_content_mention{
+    box-shadow: 0 0 6px 0 var(--koko-color);
+    padding: 2px 5px;
+    border-radius: 0 0 5px 5px;
+    font-style: italic;
+}
+.text_koko_content_mention h3{
+    color: var(--koko-color);
 }
