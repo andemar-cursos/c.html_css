@@ -109,7 +109,7 @@ nav li a:hover{
 }
 
 .content p{
-    height:50px;
+    height:80px;
     overflow: hidden;
     /*No funciona el ellipsis*/
     text-overflow: ellipsis;
@@ -278,4 +278,16 @@ nav li a:hover{
 }
 .text_koko_content_mention h3{
     color: var(--koko-color);
+}
+
+/*Footer*/
+.footer{
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+    font-size: var(--normal-font);
+    padding: 0 30px;
+    background-color: var(--azulOscuro-color);
 }
