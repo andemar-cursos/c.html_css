@@ -349,3 +349,31 @@ nav li a:hover{
     margin-top: 30px;
     background-color: var(--azul-color);
 }
+
+
+/*------------------FAQ'S------------------*/
+
+.title_faqs{
+    margin: 80px 0 0 100px;
+    font-size: var(--extra-font);
+    color: var(--azulOscuro-color);
+    font-style: italic;
+}
+
+.faqs{
+    margin: 30px 0;
+}
+
+.faq{
+    margin: 2% 10%;
+}
+
+.faq h1{
+    margin: 0;
+    color: var(--azulOscuro-color);
+}
+
+.faq h3{
+    margin: 0;
+    color: var(--gris-color);
+}
