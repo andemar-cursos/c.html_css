@@ -70,11 +70,14 @@ nav li a:hover{
     margin: 0;
 }
 
-label{
-    font-size: var(--big-font);
-    font-weight: bold;
-    font-style: italic;
-    color: var(--azulOscuro-color);
+.absolute{
+    position: absolute;
+    bottom: 0;
+    width: -webkit-fill-available;
+}
+
+.center{
+    justify-content: center;
 }
 
 /* -------- main section -----------*/
@@ -325,12 +328,13 @@ label{
     padding: 40px 20px 20px 20px;
 }
 
-.formulario input{
+.formulario .data{
     margin: var(--space) 0;
     width: -webkit-fill-available;
     height: 40px;
     border-radius: 3px;
     border: 1px solid var(--gris-color);
+    font-size: var(--normal-font);
 }
 
 .formulario_desc_img{
@@ -341,4 +345,7 @@ label{
     max-width: 200px;
 }
 
-/*---------------Venta----------------*/
+.formulario .main_button{
+    margin-top: 30px;
+    background-color: var(--azul-color);
+}
