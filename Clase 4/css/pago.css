@@ -1,0 +1,41 @@
+body{
+    background-color: var(--azulOscuro-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    height: 100vh;
+    width: -webkit-fill-available;
+    text-align: center;
+}
+
+
+.content_imagen{
+    background-image: url("../../adobe%20xd/imagenes/Kurata.Mashiro.full.3012611.png");
+    background-size: 350px 89%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    height: 50%;
+    display: table;
+}
+
+.content_imagen h1{
+    margin: 0;
+    display: table-cell;
+    vertical-align: bottom;
+    font-size: var(--extra-font);
+    font-style: italic;
+    color: var(--white-color);
+}
+
+.content_redireccion p{
+    margin: 5px 0;
+}
+
+.content_redireccion a{
+    color: var(--azulClaro-color);
+}
