@@ -95,7 +95,7 @@ nav li a:hover{
 
 .products{
     display: flex;
-    background-image: url("../../adobe xd/assets/curva.png");
+    background-image: url("../adobe xd/assets/curva.png");
     background-size: cover;
     background-position: center top;
     padding: 15%;
