@@ -1,5 +1,5 @@
 .container{
-    max-width: 900px;
+    max-width: 73%;
     /*Se alinea al centro el container*/
     margin: auto;
 }
@@ -43,6 +43,7 @@
 .col-4,.col-5,.col-6,
 .col-7,.col-8,.col-9,
 .col-10{
+    margin: 50px 0;
     padding: 10px;
 }
 
@@ -57,4 +58,56 @@
     .col-10{
         width: 100%;
     }
+}
+
+
+
+/*Productos*/
+
+.align-left{
+    text-align: left;
+}
+
+.align-right{
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.col-2 img{
+    border-radius: 5px;
+    height: 250px;
+    width: 250px;
+}
+
+.title-container{
+    margin: 80px 0 0 100px;
+    font-size: var(--extra-font);
+    color: var(--azul-color);
+    font-style: italic;
+}
+
+.title-day h3{
+    margin: 0;
+    font-size: var(--extra-font);
+    color: var(--daylight-color);
+}
+
+.title-black h3{
+    margin: 0;
+    font-size: var(--extra-font);
+    color: var(--blacks-color);
+}
+
+
+.title-on h3{
+    margin: 0;
+    font-size: var(--extra-font);
+    color: var(--onyour-color);
+}
+
+.description{
+    font-size: var(--normal-font);
+    color: var(--gris-color);
+    font-weight: bold;
+    font-style: italic;
 }
