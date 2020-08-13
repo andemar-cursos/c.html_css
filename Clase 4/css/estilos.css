@@ -24,6 +24,7 @@
     /*Box shadow*/
     --bShadow-button:0 2px 5px var(--azul-color);
     --bShadow-product:0 0 5px var(--azul-color);
+    --bShadow-extra-product:0 0 10px var(--azul-color);
 }
 
 
@@ -295,3 +296,30 @@ nav li a:hover{
     padding: 0 30px;
     background-color: var(--azulOscuro-color);
 }
+
+/*---------------Venta----------------*/
+
+.modulo_pago{
+    background-color: var(--white-color);
+    box-shadow: var(--bShadow-extra-product);
+    border-radius: 10px 10px 5px 5px;
+    padding: var(--space);
+}
+
+.modulo_pago h3{
+    font-size: var(--big-font);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--azulOscuro-color);
+    margin: 0;
+}
+
+.modulo_pago_img{
+    text-align: center;
+}
+
+.modulo_pago_img img{
+    max-width: 200px;
+}
+
+/*---------------Venta----------------*/
